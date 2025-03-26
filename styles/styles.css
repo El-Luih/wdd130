@@ -1,5 +1,11 @@
+:root {
+    --section-margin: 2rem;
+    --upper-color: darkblue;
+    --image-border: 1px solid black;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--upper-color);
     padding: 10px;
 }
 
@@ -14,13 +20,13 @@ main {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--upper-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--image-border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -31,8 +37,8 @@ p {
 
 aside {
     width: 25rem;
-    margin: 2rem;
-    border: 3px solid rgb(195 225 255);
+    margin: var(--margin-setting);
+    border: 3px dotted rgb(195 225 255);
     padding: 1rem;
     background-color: rgb(85 85 85);
     color: rgb(195 225 255);
@@ -41,10 +47,11 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    border: var(--image-border);
 }
 
 footer {
-    margin-top: 2rem;
+    margin-top: var(--margin-setting);
     border-top: 3px dotted rgb(30 30 30);
     text-align: center;
 }

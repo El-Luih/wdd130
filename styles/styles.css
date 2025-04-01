@@ -1,18 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
-    --section-margin: 2rem;
-    --upper-color: darkblue;
+    --section-margin: 1rem;
+    --upper-color: rgb(85 85 85);
     --image-border: 1px solid black;
+    --light-color: rgb(195 225 255);
 }
 
 nav {
     background-color: var(--upper-color);
     padding: 10px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 nav a {
-    color: white;
+    color: var(--light-color);
     display: block;
     padding: 20px;
+    display: inline;
+    margin: 0 2rem;
 }
 
 main {
@@ -29,6 +40,7 @@ main img {
     border: var(--image-border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -37,11 +49,18 @@ p {
 
 aside {
     width: 25rem;
-    margin: var(--margin-setting);
-    border: 3px dotted rgb(195 225 255);
-    padding: 1rem;
-    background-color: rgb(85 85 85);
-    color: rgb(195 225 255);
+    border: 3px dotted var(--light-color);
+    position: relative;
+}
+
+.country-header {
+    position: absolute;
+    color: rgb(0 0 0);
+    left: 2.4rem;
+}
+
+.temple-board a {
+    color: var(--light-color);
 }
 
 aside img {
@@ -51,7 +70,16 @@ aside img {
 }
 
 footer {
-    margin-top: var(--margin-setting);
+    margin-top: var(--section-margin);
     border-top: 3px dotted rgb(30 30 30);
     text-align: center;
+}
+
+/*CLASS SELECTORS*/
+
+.box {
+    margin: var(--section-margin);
+    padding: 1rem;
+    background-color: var(--upper-color);
+    color: var(--light-color);
 }

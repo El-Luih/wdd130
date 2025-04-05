@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 :root {
     --section-margin: 1rem;
     --upper-color: rgb(85 85 85);
@@ -13,25 +20,33 @@
 
 nav {
     background-color: var(--upper-color);
-    padding: 10px;
-    margin: 0 auto;
-    text-align: center;
+    padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: var(--light-color);
-    display: block;
-    padding: 20px;
+    padding: 1%;
     display: inline;
-    margin: 0 2rem;
+    margin: 0 1%r;
+    text-decoration: none;
 }
 
-main {
-    max-width: 800px;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
+
 
 h1 {
     color: var(--upper-color);
+    border-bottom: 0.1vh solid var(--upper-color);
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
 main img {
@@ -47,10 +62,15 @@ p {
     padding: 0;
 }
 
+main {
+    grid-column: 2/3;
+}
+
 aside {
     width: 25rem;
     border: 3px dotted var(--light-color);
     position: relative;
+    grid-area: 1/1/2/2;
 }
 
 .country-header {

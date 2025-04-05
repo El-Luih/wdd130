@@ -67,7 +67,7 @@ main {
 }
 
 aside {
-    width: 25rem;
+    width: 300px;
     border: 3px dotted var(--light-color);
     position: relative;
     grid-area: 1/1/2/2;

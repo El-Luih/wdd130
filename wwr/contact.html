@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exciting Expeditions | About Us</title>
-    <meta name="description"
-        content="Learn more about Exciting Expeditions, our mission, and the team behind the adventures. Join us in exploring the world!">
+    <title>Contact Us | Exciting Expeditions</title>
+    <meta name="description" content="Get in touch with Exciting Expedition for questions, 
+        bookings, or custom rafting trips.">
     <meta name="author" content="Luis Maradiaga">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,58 +27,81 @@
     </header>
     <main>
         <div class="hero">
-            <img src="images/hero-image.jpg" alt="Rafting Adventure Background" class="hero-image">
-            <h1 class="heading">Exciting Expeditions</h1>
-            <article class="mission-text">
-                <img src="images/customer.webp" alt="A customer enjoyign the rafting experience">
-                <p>Welcome to Exciting Expeditions! We are a passionate team dedicated to providing unforgettable
-                    rafting adventures. Our mission is
-                    to connect people with nature and create lasting memories through thrilling outdoor experiences.</p>
-            </article>
-            <section class="history-text">
-                <div class="history-hero">
-                    <h2 class="heading">History</h2>
-                    <img src="images/history-rafting.jpg" alt="Old Rafting Adventure">
-                </div>
-                <p>Founded in 2010, Exciting Expeditions started as a small group of outdoor
-                    enthusiasts. Over the
-                    years, we have grown into a leading adventure company, offering a wide range of rafting trips for
-                    all skill levels. Our team is committed to safety, sustainability, and providing exceptional
-                    customer service.</p>
-                <p class="last">Today, Exciting Expeditions operates in some of the most breathtaking river systems
-                    across the
-                    country, from calm scenic floats to adrenaline-pumping Class V rapids. Each trip is carefully
-                    curated to match the needs and expectations of our guests—whether they’re first-time paddlers or
-                    seasoned thrill-seekers. We partner with local communities, follow eco-friendly practices, and
-                    continually invest in top-quality gear and professional training to ensure every expedition is both
-                    memorable and responsible. As we look to the future, we remain dedicated to pushing the boundaries
-                    of adventure while staying true to our core values of respect for nature, teamwork, and exploration.
+            <article class="heading-text">
+                <h1 class="heading">Reach Our Team</h1>
+                <p>We love questions and feedback - and we're always happy to help! Here are some ways to contact us.
                 </p>
-
-            </section>
-            <section class="experiences-board">
-                <h2 class="heading">Adventure Awaits You!</h2>
+            </article>
+            <section class="our-team">
+                <h2 class="heading">Our Team</h2>
                 <figure>
-                    <img src="images/rafting-1.jpg" alt="Rafting Adventure">
-                    <figcaption>The Screaming Paddle</figcaption>
+                    <img src="" alt="Our Rafting Guide">
+                    <figcaption>Rafting Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rafting-2.jpg" alt="Rafting Adventure">
-                    <figcaption>Whitewater Gauntlet</figcaption>
+                    <img src="" alt="Our Operation Manager">
+                    <figcaption>Operations Manager</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rafting-3.jpg" alt="Rafting Adventure">
-                    <figcaption>Riptide Run</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting-4.jpg" alt="Rafting Adventure">
-                    <figcaption>The Churn Zone</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting-5.jpg" alt="Rafting Adventure">
-                    <figcaption>Rapid Reckoning</figcaption>
+                    <img src="" alt="Our Safety Officer">
+                    <figcaption>Safety Officer</figcaption>
                 </figure>
             </section>
+            <section class="contact-information">
+                <h2 class="heading">Our Contact Information</h2>
+                <address>
+                    <figure>
+                        <img src="" alt="Location Icon">
+                        <figcaption>177 Huntington Ave Ste 1703</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="" alt="Email Icon">
+                        <figcaption>excitingexpeditions@gmail.com</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="" alt="Phone Icon">
+                        <figcaption>+1-234-567-8910</figcaption>
+                    </figure>
+                </address>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d73521.52443249656!2d-96.94092223309464!3d73.26614982821087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2shn!4v1744357278153!5m2!1ses-419!2shn"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+            <section class="contact-form">
+                <h2 class="heading">Send Us a Message</h2>
+                <p>Send us a message and we'll respond within 24 hours.</p>
+                <form action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <fieldset class="form-group purpose">
+                        <legend>Purpose of Contact:</legend>
+                        <label for="inquiry">General Inquiry</label>
+                        <input type="radio" id="inquiry" name="purpose" value="inquiry" checked>
+                        <label for="reservation">Reservation Question</label>
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label for="booking">Website Suggestion</label>
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    </fieldset>
+                    <div class="form-group">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
         </div>
     </main>
     <footer>

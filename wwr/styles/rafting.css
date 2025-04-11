@@ -64,7 +64,7 @@ header nav {
     height: auto;
 }
 
-h1 {
+.main-page-h1 {
     position: absolute;
     top: 5vw;
     width: 100%;
@@ -75,7 +75,7 @@ h1 {
 
 }
 
-article {
+.mission-text {
     position: absolute;
     top: 20vw;
     left: 10%;
@@ -89,7 +89,7 @@ article {
 }
 
 
-article img {
+.mission-text img {
     float: right;
     width: 20vw;
     height: auto;
@@ -202,3 +202,5 @@ footer img {
     text-decoration: none;
     margin: 0 0.5vw;
 }
+
+/* Contact Page Styling */

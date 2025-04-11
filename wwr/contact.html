@@ -26,24 +26,25 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
+        <div class="contact-hero">
             <article class="heading-text">
                 <h1 class="heading">Reach Our Team</h1>
                 <p>We love questions and feedback - and we're always happy to help! Here are some ways to contact us.
                 </p>
             </article>
+
             <section class="our-team">
                 <h2 class="heading">Our Team</h2>
                 <figure>
-                    <img src="" alt="Our Rafting Guide">
+                    <img src="images/rafting-guide.jpg" alt="Our Rafting Guide">
                     <figcaption>Rafting Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="" alt="Our Operation Manager">
+                    <img src="images/operations-manager.jpg" alt="Our Operations Manager">
                     <figcaption>Operations Manager</figcaption>
                 </figure>
                 <figure>
-                    <img src="" alt="Our Safety Officer">
+                    <img src="images/safety-officer.jpg" alt="Our Safety Officer">
                     <figcaption>Safety Officer</figcaption>
                 </figure>
             </section>
@@ -51,61 +52,73 @@
                 <h2 class="heading">Our Contact Information</h2>
                 <address>
                     <figure>
-                        <img src="" alt="Location Icon">
+                        <img src="images/location.png" alt="Location Icon">
                         <figcaption>177 Huntington Ave Ste 1703</figcaption>
                     </figure>
                     <figure>
-                        <img src="" alt="Email Icon">
+                        <img src="images/email.png" alt="Email Icon">
                         <figcaption>excitingexpeditions@gmail.com</figcaption>
                     </figure>
                     <figure>
-                        <img src="" alt="Phone Icon">
+                        <img src="images/phone.png" alt="Phone Icon">
                         <figcaption>+1-234-567-8910</figcaption>
                     </figure>
                 </address>
                 <div class="map-container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d73521.52443249656!2d-96.94092223309464!3d73.26614982821087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2shn!4v1744357278153!5m2!1ses-419!2shn"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="600" height="450" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
             </section>
+
             <section class="contact-form">
                 <h2 class="heading">Send Us a Message</h2>
                 <p>Send us a message and we'll respond within 24 hours.</p>
                 <form action="submit_form.php" method="post">
-                    <div class="form-group">
+                    <div class="form-group name-field">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required placeholder="Your name">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group email-field">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required placeholder="Your email address">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group message-field">
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
-                    <fieldset class="form-group purpose">
+                    <fieldset class="purpose">
                         <legend>Purpose of Contact:</legend>
-                        <label for="inquiry">General Inquiry</label>
-                        <input type="radio" id="inquiry" name="purpose" value="inquiry" checked>
-                        <label for="reservation">Reservation Question</label>
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        <label for="booking">Website Suggestion</label>
-                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        <div class="radio-field">
+                            <label class="column-2" for="inquiry">General Inquiry</label>
+                            <input class="column-1" type="radio" id="inquiry" name="purpose" value="inquiry" checked>
+                        </div>
+                        <div class="radio-field">
+                            <label class="column-2" for="reservation">Reservation Question</label>
+                            <input class="column-1" type="radio" id="reservation" name="purpose" value="reservation">
+                        </div>
+                        <div class="radio-field">
+                            <label class="column-2" for="suggestion">Website Suggestion</label>
+                            <input class="column-1" type="radio" id="suggestion" name="purpose" value="suggestion">
+                        </div>
                     </fieldset>
-                    <div class="form-group">
-                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    <div class="form-group newsletter-field">
                         <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
                     </div>
                     <button type="submit">Send</button>
                 </form>
+            </section>
         </div>
     </main>
     <footer>
-        <p>&copy; 2023 Exciting Expeditions | Luis Maradiaga</p>
+        <p>&copy; 2023 Exciting Expeditions | Luis Maradiaga
+            <a href="https://app.moqups.com/XOzazLUjTks2lkuFgdEp8sRriH7Qlk6k/edit/page/ad12de680"
+                class="wireframe-link">
+                Wireframe Link</a>
+        </p>
         <nav class="social-media">
             <a href="https://www.facebook.com" class="image-link">
                 <img src="images/facebook.png" alt="Facebook">

@@ -204,3 +204,284 @@ footer img {
 }
 
 /* Contact Page Styling */
+
+.contact-hero {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contact-hero .heading {
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Contact form styling */
+
+.contact-form {
+    background-color: rgb(237, 240, 244);
+    padding: 10vh;
+}
+
+.contact-form form {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 3rem auto;
+    max-width: 750px;
+    gap: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+}
+
+.contact-form h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    grid-column: 2 / span 2;
+    align-self: start;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.name-field {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.email-field {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.message-field {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 2;
+}
+
+.newsletter-field {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
+    box-sizing: border-box;
+    padding-top: 2rem;
+}
+
+.newsletter-field input {
+    width: 1.5vw;
+    height: auto;
+    margin-right: 1vw;
+    display: inline;
+    vertical-align: middle;
+}
+
+.newsletter-field label {
+    display: inline;
+    vertical-align: middle;
+}
+
+.purpose {
+    border: none;
+    width: 28%;
+    display: block;
+    margin: 15px auto;
+    grid-column: 1 / span 4;
+}
+
+.purpose legend {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    width: 110%;
+}
+
+.radio-field {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+    justify-items: start;
+}
+
+.column-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.column-2 {
+    grid-column: 2 / span 1;
+}
+
+
+/* Contact information section styling */
+
+.contact-information {
+    margin: 5em auto 8em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 20em;
+}
+
+.contact-information h2 {
+    grid-column: 1 / span 1;
+    font-size: 2em;
+    width: 50%;
+    align-self: end;
+    text-align: left;
+    margin-left: 1em;
+}
+
+.map-container {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.map-container iframe {
+    display: block;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+}
+
+
+address {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contact-information figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.contact-information img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+.contact-information figcaption {
+    font-size: 1.5rem;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* Map styling */
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Upper Main */
+
+.contact-hero article {
+    background-color: var(--secondary-color);
+    height: 40vh;
+    align-content: center;
+}
+
+.contact-hero h1 {
+    font-size: 3em;
+}
+
+.contact-hero article h1,
+.contact-hero article p {
+    margin: 2rem auto;
+    width: 30%;
+}
+
+.our-team {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: -2em;
+    gap: 3em 0;
+    padding-bottom: 5em;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.our-team h2 {
+    grid-column: 1 / span 3;
+    justify-self: center;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0.3em 0;
+    width: 15em;
+    border: 0.11vw solid #333;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    font-size: 1.7em;
+}
+
+.our-team img {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    z-index: 0;
+    position: relative;
+}
+
+.our-team figcaption {
+    text-align: center;
+    font-size: 1.3em;
+    border: 0.105vw solid #333;
+    width: 55%;
+    box-sizing: border-box;
+    padding: 1em 0;
+    border-radius: 8px;
+    justify-self: center;
+    margin-top: -2em;
+    background-color: rgb(231, 251, 255);
+    z-index: 1;
+    position: relative;
+}
+
+.wireframe-link {
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin-left: 5vw;
+    color: #333;
+}

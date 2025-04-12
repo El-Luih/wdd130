@@ -42,11 +42,16 @@ header nav {
     font-size: 1.5vw;
 }
 
-.end {
+.end-link {
     border-right: none;
+    border-top-right-radius: 0.6vw;
+    border-bottom-right-radius: 0.6vw;
 }
 
-
+.first-link {
+    border-top-left-radius: 0.6vw;
+    border-bottom-left-radius: 0.6vw;
+}
 
 
 .logo {
@@ -72,7 +77,7 @@ header nav {
     height: auto;
     padding: 1vw 0;
     text-align: center;
-
+    border-radius: 0.6vw;
 }
 
 .mission-text {
@@ -86,6 +91,7 @@ header nav {
     box-sizing: border-box;
     padding: 1.2vw 1.5vw;
     text-align: left;
+    border-radius: 0.6vw;
 }
 
 
@@ -93,6 +99,7 @@ header nav {
     float: right;
     width: 20vw;
     height: auto;
+    border-radius: 0.6vw;
 }
 
 
@@ -115,6 +122,8 @@ header nav {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
+    margin-top: 3vw;
+    border-radius: 1vw;
 }
 
 .history-hero {
@@ -132,6 +141,7 @@ header nav {
 
 .history-hero img {
     height: 15vw;
+    border-radius: 0.6vw;
 }
 
 .history-text p {
@@ -164,6 +174,7 @@ header nav {
     height: 12vw;
     width: 15vw;
     border: 0.5vw solid var(--secondary-color);
+    border-radius: 0.6vw;
     margin: 0;
 }
 
@@ -233,6 +244,7 @@ footer img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(6, auto);
+    border-radius: 0.6vw;
 }
 
 .contact-form h2 {

@@ -561,6 +561,7 @@ address {
     width: 90%;
 }
 
+
 .learn-about-cell,
 .services-cell {
     position: relative;
@@ -591,6 +592,11 @@ address {
     border-radius: 1vw;
     margin: 5%;
     font-size: 100%;
+}
+
+.learn-about-cell h2,
+.services-cell h2 {
+    width: 35%;
 }
 
 .news-cell {

@@ -1,8 +1,8 @@
 :root {
     --primary-color: #FCFCF9;
     --secondary-color: #C6F0F8;
-    --accent1-color: #D6B132;
-    --accent2-color: #6A5C3E;
+    --accent1-color: #E7CD78;
+    --accent2-color: #92ABEE;
 }
 
 body {
@@ -664,4 +664,133 @@ address {
 
 .news-cell .subscribe-form button:hover {
     background-color: #555;
+}
+
+
+/* Trip page styles */
+
+.trips-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    height: 80vw;
+    margin: 0 auto;
+    gap: 1%;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 2%;
+    grid-column: 2 / span 1;
+}
+
+.trips-call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 7%;
+    border-radius: 1vw;
+    text-align: center;
+    grid-column: 1 / span 1;
+}
+
+
+.trips-call-to-action .trips-h1 {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+}
+
+
+.trips-call-to-action .contact-us-button {
+    font-size: 1.4vw;
+    padding: 1.5vw 3vw;
+    background-color: var(--accent1-color);
+    border: none;
+    border-radius: 1vw;
+    text-decoration: none;
+    color: #000;
+    display: grid;
+    place-content: center;
+}
+
+.trips-call-to-action .contact-us-button:hover {
+    background-color: var(--accent1-color);
+}
+
+.trip-cell {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: var(--accent2-color);
+    padding: 2%;
+    border-radius: 1vw;
+    text-align: center;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+}
+
+.trip-text {
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+    border-radius: 1vw;
+    border: 0.1vw solid rgba(0, 0, 0, 0.9);
+}
+
+.trip-cell .trip-image {
+    width: 100%;
+    height: auto;
+    border-radius: 1vw;
+    margin-bottom: 0.1vw;
+    aspect-ratio: 1 / 1;
+}
+
+.trip-cell .trip-title {
+    font-size: 1.3vw;
+    margin-bottom: 0.6vw;
+}
+
+.trip-cell .trip-duration {
+    font-size: 1vw;
+    margin-bottom: 0.6vw;
+}
+
+.trip-cell .trip-prices {
+    font-size: 0.8vw;
+    color: #333;
+}
+
+.expeditions-table {
+    margin: 10vw auto;
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 1vw;
+    text-align: center;
+    padding: 5vw 0;
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
+.expeditions-table table {
+    margin: 0 auto;
+}
+
+.expeditions-table caption {
+    font-size: 3.5vw;
+    margin-bottom: 2vw;
+}
+
+.expeditions-table th,
+.expeditions-table td {
+    border: 0.2vw solid #ccc;
+    padding: 1vw;
+    font-size: 1.2vw;
+}
+
+.expeditions-table th {
+    background-color: var(--secondary-color);
+}
+
+.expeditions-table td {
+    background-color: rgba(252, 252, 249, 0.8);
 }
